@@ -1,0 +1,112 @@
+/* Variables */
+:root{
+  --navbar-bg: #000;
+  --font-light: white;
+  --nav-selection-clr: red;
+  --default-spl-text-clr: darkorange;
+  --lin-grad-light-orange: #e0c726;
+  --burgundy: #800020;
+}
+
+.body{
+  background: linear-gradient(90deg, var(--lin-grad-light-orange), darkorange);
+  height: 82.7vh;
+}
+
+.body-child{
+  background-color: var(--font-light);
+  width: 90%;
+  height: 75vh;
+  padding: 50px 0;
+  margin: auto;
+  position: relative;
+  top: 4%;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.7);
+}
+.card-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 20px;
+}
+
+.card-container h1{
+  text-align: center;
+}
+
+.card-row{
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.card{
+  border: 1px solid black;
+  width: 80%;
+  height: 250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px;
+}
+
+.card:hover{
+  background-color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+.lang-logo{
+  width: 150px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* MEDIA QUERIES */
+
+@media all and (856px < width < 1650px){
+  .body{
+    height: 750px;
+  }
+  .body-child{
+    height: 700px;
+  }
+}
+
+@media all and (575px < width <= 856px){
+  .body{
+    height: 660px;
+  }
+  .body-child{
+    height: 600px;
+  }
+  .card{
+    height: 200px;
+  }
+  .lang-logo{
+    width: 90px;
+  }
+}
+
+@media all and (500px < width < 575px ){
+  .body{
+    height: 1048px;
+  }
+  .body-child{
+    height: 990px;
+  }
+  .card-row{
+    display: flex;
+    flex-direction: column;
+  }
+  .card{
+    width: 90%;
+    height: 80px;
+  }
+  .lang-logo{
+    width: 55px;
+  }
+}

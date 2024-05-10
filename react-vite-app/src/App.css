@@ -1,0 +1,23 @@
+:root{
+  --navbar-bg: #000;
+  --font-light: white;
+  --nav-selection-clr: red;
+  --default-spl-text-clr: darkorange;
+  --lin-grad-light-orange: #e0c726;
+  --burgundy: #800020;
+}
+
+.reg{
+  background: linear-gradient(90deg, var(--lin-grad-light-orange), darkorange);
+}
+
+.form-container{
+  width: 95%;
+  border-radius: 20px;
+  margin: auto;
+  background-color: var(--font-light);
+}
+
+.reg-header{
+  text-align: center;
+}
